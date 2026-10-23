@@ -1,3 +1,4 @@
+import http from 'http'; http.createServer((req,res)=>{res.writeHead(200);res.end('Sakura Bot ON')}).listen(process.env.PORT || 3000);
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1'
 import './settings.js'
 import { startSub } from './lib/conexion.js'
